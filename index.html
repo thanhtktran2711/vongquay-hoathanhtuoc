@@ -1,25 +1,101 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vòng quay Hoa Thanh Tước</title>
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Vòng quay may mắn | Hoa Thanh Tước</title>
 
 <link rel="stylesheet" href="style.css">
+
+<script src="config.js"></script>
 
 </head>
 
 <body>
 
-<h1>🌸 HOA THANH TƯỚC 🌸</h1>
+<div class="container">
 
-<p>Vòng quay may mắn</p>
+<header>
 
-<button id="spinBtn">
+<img
+src="assets/logo.png"
+class="logo">
+
+<h1>
+
+VÒNG QUAY MAY MẮN
+
+</h1>
+
+<p>
+
+Chuyên hoa tươi sỉ
+
+</p>
+
+</header>
+
+<div class="form">
+
+<input
+id="name"
+type="text"
+placeholder="Nhập họ tên">
+
+<input
+id="phone"
+type="tel"
+placeholder="Nhập số điện thoại">
+
+</div>
+
+<div class="wheel-area">
+
+<div class="pointer">
+
+▼
+
+</div>
+
+<canvas
+id="wheel"
+width="500"
+height="500">
+
+</canvas>
+
+<button
+id="spinBtn">
+
 QUAY NGAY
+
 </button>
+
+</div>
+
+<div
+id="result"
+class="result">
+
+</div>
+
+<footer>
+
+0777888001
+
+</footer>
+
+</div>
+
+<script src="wheel.js"></script>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
